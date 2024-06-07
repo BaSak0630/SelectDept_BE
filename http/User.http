@@ -1,0 +1,18 @@
+###모든 user 다가져오기
+GET http://localhost:8080/users/all
+
+###검색어 입력시 조건에 맞는 user list get
+GET localhost:8080/users?word=동혁
+
+
+###user등록
+POST localhost:8080/users
+Content-Type: application/json
+
+ {
+        "username": "문상호",
+        "dept": "컴퓨터공전공",
+        "shNum": "6225",
+        "location": "I508",
+        "phoneNumber": "개인정보동의후"
+ }
